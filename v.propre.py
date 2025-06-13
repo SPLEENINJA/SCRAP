@@ -80,7 +80,7 @@ for link in article_links:
         all_articles.append(article_data)
     
 with open("articles.json", "w", encoding="utf-8") as f: 
-    data = json.dumps(all_articles, indent=2, )
+    data = json.dumps(all_articles, indent=2)
     data = json.dump(data, f)  # Valide si pas d'erreur
     # print("✅ JSON valide. Nombre d'articles :", len(data))
 
